@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "76023339953",
+    "project_id": "to-do-gikj27",
+    "storage_bucket": "to-do-gikj27.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76023339953:android:9aa0dc062ddf246b9abb90",
+        "android_client_info": {
+          "package_name": "com.csc305.todo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-LJB96DR1TUc8lPdy7tx0g5RLyT9rxI0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
