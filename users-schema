@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Users",
+  "description": "Schema for users in the ToDo app",
+  "type": "object",
+  "properties": {
+    "birthday": {
+      "type": "string",
+      "format": "date-time",
+      "description": "User's birthdate stored as a Firestore timestamp"
+    },
+    "created_time": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the user was created"
+    },
+    "display_name": {
+      "type": "string",
+      "description": "User's display name"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "User's email address"
+    },
+    "photo_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL of the user's profile photo"
+    },
+    "uid": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9]{20,}$",
+      "description": "Unique identifier for the user"
+    }
+  },
+  "required": ["uid", "email", "display_name", "created_time"]
+}
