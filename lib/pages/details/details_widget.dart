@@ -15,6 +15,9 @@ class DetailsWidget extends StatefulWidget {
 
   final TasksRecord? taskDoc;
 
+  static String routeName = 'details';
+  static String routePath = '/details';
+
   @override
   State<DetailsWidget> createState() => _DetailsWidgetState();
 }
@@ -66,14 +69,14 @@ class _DetailsWidgetState extends State<DetailsWidget> {
         body: SafeArea(
           top: true,
           child: Align(
-            alignment: const AlignmentDirectional(0.0, 0.0),
+            alignment: AlignmentDirectional(0.0, 0.0),
             child: Column(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Padding(
                   padding:
-                      const EdgeInsetsDirectional.fromSTEB(24.0, 24.0, 24.0, 24.0),
+                      EdgeInsetsDirectional.fromSTEB(24.0, 24.0, 24.0, 24.0),
                   child: Container(
                     height: 460.0,
                     decoration: BoxDecoration(
@@ -85,7 +88,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                       ),
                     ),
                     child: Padding(
-                      padding: const EdgeInsets.all(24.0),
+                      padding: EdgeInsets.all(24.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -149,7 +152,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                 ),
                           ),
                           Expanded(
-                            child: SizedBox(
+                            child: Container(
                               width: double.infinity,
                               child: TextFormField(
                                 controller: _model.textFieldTitleTextController,
@@ -175,7 +178,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                         letterSpacing: 0.0,
                                       ),
                                   enabledBorder: UnderlineInputBorder(
-                                    borderSide: const BorderSide(
+                                    borderSide: BorderSide(
                                       color: Color(0xFF57636C),
                                       width: 1.0,
                                     ),
@@ -207,9 +210,9 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                   fillColor: _model.editingMode
                                       ? FlutterFlowTheme.of(context)
                                           .secondaryBackground
-                                      : const Color(0xFFB9BBBB),
+                                      : Color(0xFFB9BBBB),
                                   contentPadding:
-                                      const EdgeInsetsDirectional.fromSTEB(
+                                      EdgeInsetsDirectional.fromSTEB(
                                           24.0, 26.0, 24.0, 26.0),
                                 ),
                                 style: FlutterFlowTheme.of(context)
@@ -229,7 +232,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 0.0, 6.0, 0.0, 0.0),
                             child: Text(
                               'Details',
@@ -242,7 +245,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                             ),
                           ),
                           Expanded(
-                            child: SizedBox(
+                            child: Container(
                               width: double.infinity,
                               child: TextFormField(
                                 controller:
@@ -302,9 +305,9 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                   fillColor: _model.editingMode
                                       ? FlutterFlowTheme.of(context)
                                           .secondaryBackground
-                                      : const Color(0xFFB9BBBB),
+                                      : Color(0xFFB9BBBB),
                                   contentPadding:
-                                      const EdgeInsetsDirectional.fromSTEB(
+                                      EdgeInsetsDirectional.fromSTEB(
                                           24.0, 26.0, 24.0, 26.0),
                                 ),
                                 style: FlutterFlowTheme.of(context)
@@ -324,7 +327,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 0.0, 12.0, 0.0, 0.0),
                             child: FFButtonWidget(
                               onPressed: () async {
@@ -344,9 +347,9 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                               options: FFButtonOptions(
                                 width: double.infinity,
                                 height: 70.0,
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
-                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                iconPadding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
                                 color: FlutterFlowTheme.of(context).primary,
                                 textStyle: FlutterFlowTheme.of(context)
@@ -368,13 +371,13 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                             ),
                           ),
                         ]
-                            .divide(const SizedBox(height: 4.0))
-                            .around(const SizedBox(height: 4.0)),
+                            .divide(SizedBox(height: 4.0))
+                            .around(SizedBox(height: 4.0)),
                       ),
                     ),
                   ),
                 ),
-              ].divide(const SizedBox(height: 12.0)),
+              ].divide(SizedBox(height: 12.0)),
             ),
           ),
         ),

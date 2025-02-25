@@ -57,13 +57,13 @@ class _TaskWidgetState extends State<TaskWidget> {
         ),
       ),
       child: Padding(
-        padding: const EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
+        padding: EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
         child: Row(
           mainAxisSize: MainAxisSize.max,
           children: [
             Theme(
               data: ThemeData(
-                checkboxTheme: const CheckboxThemeData(
+                checkboxTheme: CheckboxThemeData(
                   visualDensity: VisualDensity.compact,
                   materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
                   shape: CircleBorder(),
